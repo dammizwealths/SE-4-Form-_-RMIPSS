@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://rawgit.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    <title>Consent Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .right-align {
+            text-align: right;
+        }
+
+        .imgl {
+            max-width: 150px;
+            margin-left: -170px;
+        }
+
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .left-content {
+            max-width: 100px;
+        }
+
+        .right-content {
+            width: 90%;
+            border: 1px solid black;
+            margin-left: 70px;
+
+        }
+
+        .right-align {
+            text-align: right;
+            margin-right: -120px;
+        }
+
+        .your {
+            border: 1px solid black;
+            margin-left: 72px;
+        }
+
+        .container2 {
+            width: 50%;
+            margin: 50px auto;
+        }
+
+        .consent-list {
+            list-style-type: none;
+            counter-reset: section;
+        }
+
+        .consent-item {
+            counter-increment: section;
+            margin-bottom: 20px;
+        }
+
+        .consent-item:before {
+            content: counter(section) ". ";
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .consent-text {
+            margin-left: 30px;
+        }
+
+        .header1 {
+            background-color: #F0F290;
+            margin-left: 70px;
+            height: 25px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-size: 12px;
+            padding-top: 12px;
+            font-weight:bold;
+        }
+
+        .header2 {
+            height: 65px;
+            border: 1px solid black;
+            margin-left: 70px;
+            margin-top: -16px;
+            padding-top: 12px;
+        }
+
+        .container3 {
+            width: 90%;
+            margin: 50px auto;
+            border: 1px solid black;
+            margin-left: 70px;
+        }
+
+        .container4 {
+            width: 70%;
+            margin: 50px auto;
+            border: 1px solid black;
+            margin-left: 70px;
+        }
+
+        .consent-text {
+            margin-bottom: 20px;
+        }
+
+        .checkbox {
+            margin-left: 20px;
+        }
+
+        .checkbox-label {
+            text-align: justify;
+        }
+
+        .give {
+            border: 1px solid black;
+            text-align: justify;
+            text-align-last: justify;
+            display: inline;
+            margin-left: 51px;
+        }
+
+        .f1 {
+            border: 1px solid black;
+            margin-left: 50px;
+            text-align: justify;
+            display: block;
+            margin-top: -20px;
+        }
+
+        .f2 {
+            border: 1px solid black;
+            margin-left: 50px;
+            text-align: justify;
+            display: block;
+            margin-top: -20px;
+        }
+
+        .f3 {
+            border: 1px solid black;
+            margin-left: 50px;
+            text-align: justify;
+            display: block;
+            
+        }
+
+        .containerz {
+            width: 50%;
+            margin: 50px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .containerz1 {
+            width: 50%;
+            margin: 50px auto;
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+        }
+
+        .dat {
+            margin-top: 10px; /* Add margin to separate date label and input field */
+        }
+
+         .sig {
+            display: flex;
+            margin:40px;
+        }
+
+        .signature-input,
+        .date-input {
+            border: 1px solid #000;
+            padding: 5px;
+            width: 80%; /* Adjust the width as needed */
+         
+        }
+
+        .signature,
+        .date {
+            width: 45%; /* Adjust the width as needed */
+        }
+
+        .dat {
+            margin-top: 10px;
+            text-align: right; /* Align the date label to the right */
+        }
+
+        .signature-label,
+        .date-label {
+            margin-top: 10px;
+        }
+
+        .submit-btn {
+            padding: 10px 10px 10px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 80px; /* Adjust the width as needed */
+            margin-left:150px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="imgl.JPG" alt="imgl" class="imgl">
+    <div class="right-align">
+        <p>Republic of the Marshall Islands</p>
+        <p>Public School System</p>
+        <p>Consent for Evaluation/Reevaluation (SE-4)</p>
+    </div>
+</div>
+
+
+<div class="right-content">
+    <p><b>Personal delivered</b></p>
+    <p>DOB: <input type="date"></p>
+</div>
+<p class="your">To: <span contenteditable="true">Click or tap here to enter text.</span>: <b>Parent</b></p>
+<p class="your">From: <span contenteditable="true">Click or tap here to enter text.</span>: <b>Principal</b> </p>
+
+<p>
+    <div class="header1">SUBJECT: Consent for Initial Evaluation or Reevaluation Form SE-4 </div>
+</p>
+<div class="header2">
+    Instructions to Parents: Please complete Part III as indicated below. Please sign your name and fill in the date on
+    the bottom of the page and return this form to the school. Your child’s placement will not be changed without your
+    knowledge and consent or until due process has been exhausted.
+</div>
+
+<div class="container3">
+    <div class="consent-text">
+        <p><b>SECTION A</b></p>
+        Part I:<br>
+        <label class="checkbox-label">
+            <input type="radio" class="checkbox-input" name="sectionA">
+            <span class="f1">
+                The request for an initial evaluation for your child has been received. This initial comprehensive educational
+                evaluation will be used to determine your child’s eligibility; a bilingual evaluator or bilingual assistance may
+                be used in the evaluation. Before the initial evaluation can be conducted, your written consent is required.
+            </span>
+        </label>
+        <p>
+            Part II:<br>
+        <label class="checkbox-label">
+            <input type="radio" class="checkbox-input" name="sectionA">
+            <span class="f1">
+                The request for a reevaluation for a possible change in placement for your child has been received. This reevaluation will be used to determine your child’s eligibility for special education. If your child has a language other than English or Marshallese, a reevaluation for a possible change in placement can be conducted, your written consent is required. 
+            </span>
+        </label>
+        </p>
+    </div>
+        
+</div>
+<div class="container4">
+    <div class="consent-text">
+        <p><b>SECTION B</b></p>
+        Part III:<br>
+        <label class="checkbox-label">
+            <input type="radio" class="checkbox-input" name="sectionB">
+            <span class="f2"> I give my consent for an initial reevaluation to be conducted by the Ministry of Education.</span><br>
+
+        </label>
+        <label class="checkbox-label">
+            <input type="radio" class="checkbox-input" name="sectionB">
+            <span class="f2"> I do not give my consent for an initial or reevaluation to be conducted by Ministry of Education.</span><br>
+
+        </label>
+        <label class="checkbox-label">
+            <input type="radio" class="checkbox-input" name="sectionB">
+            <span class="f2">  will obtain, at my own expense, an Independent educational evaluation and provide the results to the school principal and Special Education Program.</span>
+
+        </label>
+
+        <div class="f3">
+            <br><br><br><br>Granting parental consent is voluntary. Parents retain the right to 
+            refuse consent for initial evaluation or for reevaluation for a 
+            possible change in the placement and to revoke it at any time. However,
+             should a parent refuse consent or revoke it, the Ministry of Education 
+             may then request a hearing to obtain approval to conduct the initial 
+             evaluation or reevaluation for a possible change in placement. 
+             Parents have the right to seek an independent evaluation. 
+             Under certain conditions this evaluation may be at public expense. 
+             In addition, please note in the Parents' Rights and Due Process 
+             Procedures in Chapter 25 of education rules and regulations that 
+             an impartial hearing may be requested by a parent or the Ministry
+              of Education on any matter relating to proposed (or refused) 
+              action to initiate (or change) the identification, evaluation, 
+              program, or placement of a child. 
+      </div>
+    </div>
+
+    
+    <br><br>
+    <div class="containerz1">
+        
+        <div class="sig">
+            <div class="signature">
+                <input type="text" id="signature" class="signature-input" required><br>
+                <label class="signature-label" for="signature">Signature of Parent:</label>
+            </div>
+            
+            <div class="date">
+                <input type="date" id="date" class="date-input"><br>
+                <label class="dat date-label" for="date">Date:</label>
+            </div>
+            <br><br>
+            
+
+        </div>
+        
+        <button class="submit-btn">Submit</button>
+    </div>
+    
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector('.submit-btn').addEventListener('click', function () {
+            // Get the values
+            var dob = document.querySelector('input[type="date"]').value;
+            var to = document.querySelector('.your span').textContent.trim();
+            var from = document.querySelectorAll('.your span')[1].textContent.trim();
+            var sectionA = document.querySelector('input[name="sectionA"]:checked');
+            var sectionB = document.querySelector('input[name="sectionB"]:checked');
+            var signature = document.getElementById('signature').value;
+            var date = document.getElementById('date').value;
+
+            // Check for missing information
+            if (!dob || !to || !from || !sectionA || !sectionB || !signature || !date) {
+                alert('Please fill in all required fields (D.O.B, To, From, SECTION A, SECTION B, Signature, Date)');
+                return;
+            }
+
+            // Open a new window
+            var newWindow = window.open('', '_blank');
+
+            // Display the information in the new window
+            newWindow.document.write(`
+                <h1>Consent Form Preview</h1>
+
+
+ <div>
+                <img style="margin-top:30px;" "width: 50px;" "height: 50px;" src="imgl.jpg" alt="imgl" class="imgl">
+                
+</div>
+
+<div style="float:right; margin-top:-150px; margin-right:20px;">
+        <p>Republic of the Marshall Islands</p>
+        <p>Public School System</p>
+        <p>Consent for Evaluation/Reevaluation (SE-4)</p>
+    </div>
+
+                <p><strong>DOB:</strong> ${dob}</p>
+                <p><strong>To:</strong> ${to}</p>
+                <p><strong>From:</strong> ${from}</p>
+         <div style="background-color:#F0F290; height: 50px; text-align: center; line-height: 50px;">
+                    <font color="black"><b>SUBJECT: Consent for Initial Evaluation or Reevaluation Form SE-4</b></font>
+        </div>
+ <font color= "white"> SUBJECT: Consent for Initial Evaluation or Reevaluation Form SE-4</font></div>
+                <p><strong>SECTION A:</strong> ${sectionA.nextElementSibling.textContent}</p>
+                <p><strong>SECTION B:</strong> ${sectionB.nextElementSibling.textContent}</p>
+                <p><strong>Signature:</strong> ${signature}</p>
+                <p><strong>Date:</strong> ${date}</p>`
+            );
+            newWindow.document.close(); // Close the document for writing
+
+            // Optionally, you can also trigger PDF generation here using html2pdf if needed.
+        });
+    });
+</script>
+<div id="display-container"></div>
+</body>
+</html>
